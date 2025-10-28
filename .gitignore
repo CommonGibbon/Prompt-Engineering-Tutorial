@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Hydra experiment outputs
+outputs/
+
+# MLflow tracking
+mlruns/
+
+# Jupyter checkpoints
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+
+# Environment files
+.env

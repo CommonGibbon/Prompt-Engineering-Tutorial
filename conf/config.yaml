@@ -1,0 +1,16 @@
+defaults:
+  - prompts: v4
+
+image_path: "data/images/"
+label_path: "data/labels.csv"
+sample_image_path: "data/sample_images/sample.jpg" 
+model: openai/gpt-5-mini
+
+mlflow:
+    tracking_uri: "mlruns"  
+    experiment_name: "cat_it_prompt_evaluation"
+    run_name: "experiment_${now:%Y-%m-%d_%H-%M-%S}" 
+
+hydra:
+  job:
+    chdir: false  # This keeps you in the original directory
